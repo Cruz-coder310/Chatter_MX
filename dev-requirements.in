@@ -1,0 +1,8 @@
+# dev-requirements.in
+
+-c requirements.txt
+
+ruff
+ipython
+pipdeptree
+litecli
