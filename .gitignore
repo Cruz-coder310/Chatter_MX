@@ -1,0 +1,16 @@
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Django
+local_settings.py
+db.sqlite3
+*.sqlite3
+media/
+
+# Entornos virtuales y variables
+.env
+.venv/
+
+# Ruff (linter)
+.ruff_cache/
