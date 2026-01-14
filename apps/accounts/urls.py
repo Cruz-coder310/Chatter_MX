@@ -19,6 +19,26 @@ urlpatterns = [
         auth_view.PasswordChangeDoneView.as_view(),
         name="password_change_done",
     ),
+    path(
+        "accounts/password-reset/",
+        auth_view.PasswordResetView.as_view(),
+        name="password_reset",
+    ),
+    path(
+        "accounts/password-reset/done/",
+        auth_view.PasswordResetDoneView.as_view(),
+        name="password_reset_done",
+    ),
+    path(
+        "accounts/reset/<uidb64>/<token>/",
+        auth_view.PasswordResetConfirmView.as_view(),
+        name="password_reset_confirm",
+    ),
+    path(
+        "accounts/reset/complete/",
+        auth_view.PasswordResetCompleteView.as_view(),
+        name="password_reset_complete",
+    ),
     # Temporary home page for testing LOGOUT_REDIRECT_URL
     path("", views.home, name="home"),
 ]
