@@ -1,4 +1,7 @@
 {% extends "_base.html" %}
 {% block content %}
     <h4>You are successfully logged in.</h4>
+    <p>
+        <a href="{% url 'password_change' %}">Change your password</a>
+    </p>
 {% endblock content %}
