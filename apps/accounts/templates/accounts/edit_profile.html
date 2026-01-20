@@ -1,0 +1,10 @@
+{% extends "_base.html" %}
+{% block content %}
+    <h1>Profile of {{ request.user.username }}</h1>
+    <p>Edit your profile information:</p>
+    <form action="" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="Save changes">
+    </form>
+{% endblock content %}
