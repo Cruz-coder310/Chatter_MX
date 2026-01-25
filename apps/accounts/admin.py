@@ -20,15 +20,15 @@ class CustomUserAdmin(UserAdmin):
 
     fieldsets = (
         (
-            "Profile",
+            "Account Details",
             {"fields": ("username", "password")},
         ),
         (
-            "Personal Info",
+            "Personal Information",
             {"fields": ("first_name", "last_name", "email")},
         ),
         (
-            "Additonal Info",
+            "Additional Information",
             {"fields": ("birthday", "photo")},
         ),
         (
@@ -42,7 +42,7 @@ class CustomUserAdmin(UserAdmin):
             },
         ),
         (
-            "Important dates",
+            "Important Dates",
             {"fields": ("last_login", "date_joined")},
         ),
     )

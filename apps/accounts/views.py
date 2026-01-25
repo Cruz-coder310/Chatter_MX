@@ -9,7 +9,7 @@ def home(request):
     return render(request, "home.html")
 
 
-@login_required()
+@login_required
 def dashboard_panel(request):
     return render(request, "accounts/dashboard.html")
 
@@ -28,7 +28,7 @@ def registration(request):
     return render(request, "accounts/registration.html", {"form": form})
 
 
-@login_required()
+@login_required
 def edit_profile(request):
     if request.method == "POST":
         form = UserEditForm(
