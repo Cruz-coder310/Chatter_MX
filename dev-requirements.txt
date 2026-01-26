@@ -14,6 +14,7 @@ asttokens==3.0.1
     # via stack-data
 certifi==2026.1.4
     # via
+    #   -c requirements.txt
     #   httpcore
     #   httpx
 cli-helpers[styles]==2.7.0
@@ -52,6 +53,7 @@ httpx==0.28.1
     # via openai
 idna==3.11
     # via
+    #   -c requirements.txt
     #   anyio
     #   httpx
 ipython==8.38.0
